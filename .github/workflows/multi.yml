@@ -1,0 +1,13 @@
+name : "Multievent pipeline/workflow"
+on:
+    push:
+        branches:
+            - master
+            - test
+
+jobs:
+    on-push:
+        runs-on: ubumtu-latest
+        steps:
+            - name: "Running on the master push"
+              run: echo "Running on the master push"
