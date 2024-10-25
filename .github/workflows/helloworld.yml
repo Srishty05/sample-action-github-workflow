@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - production
+<<<<<<< HEAD
 jobs:
   hello_world:
      runs-on: ubuntu-latest
@@ -12,3 +13,13 @@ jobs:
       - name: "print hello world"
         run : echo "hello world"
         
+=======
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "print hello world"
+        run: echo "hello world"
+
+>>>>>>> d174795a718c8694fceebe0a79f753540e7449cc
